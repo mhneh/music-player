@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/regular.min.js"> -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./base.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./asset/scripts/main.js"></script>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div id="app">
+        <header id="header">
+            <div class="header__header">
+                
+            <i class="fa-solid fa-chevron-down header__header-control"></i>
+                <span class="header__header-content">
+                    <p class="header__header-title">Now playing:</p>
+                    <p class="header__header-music-name">Tình đầu</p>
+                </span>
+                <i class="fa-regular fa-plus header__header-control"></i>
+            </div>
+            <!-- <div class="header__cd"></div> -->
+            <img src="./asset/images/tinhdau.jpg" alt="" class="header__cd">
+            <ul class="header__control">
+                <li class="header__control-item repeat-button"><i class="fa-solid fa-rotate-right"></i></li>
+                <li class="header__control-item backward-button"><i class="fa-solid fa-backward-step"></i></li>
+                <li class="header__control-item play-button ">
+                    <i class="fa-solid fa-pause pausing"></i>
+                    <i class="fa-solid fa-play  playing"></i>
+                </li>
+                <li class="header__control-item forward-button"><i class="fa-solid fa-forward-step"></i></li>
+                <li class="header__control-item random-button "><i class="fa-solid fa-shuffle"></i></li>
+            </ul>
+            <input type="range" id="progress" class="progress" value="0" step="1" min="0" max="100"> 
+            <div class="progress-music">
+                <!-- <audio src="./asset/musics/tinh-dau.mp3"></audio> -->
+                <audio controls  controlsList="nodownload noplaybackrate" src="./asset/musics/tinh-dau.mp3" id="myAudio">
+                    <!-- <source src="./asset/musics/tinh-dau.mp3" type="audio/mpeg"> -->
+               
+                  </audio>
+            </div>
+        </header>
+        <main id="main">
+            <ul class="playlist">
+                <!-- <li class="playlist__item playlist__item--next">
+                    <img src="./asset/images/anh_sao_va_bau_troi.jpg" alt="" class="item-picture">
+                    <div class="item-content">
+                        <h5 class="item-content__name">Ánh sao và bầu trời</h5>
+                        <p class="item-content__singer">T.R.I, Cá</p>
+                    </div>
+                    <i class="fa-solid playlist__item-more fa-ellipsis"></i>
+                </li>
+              -->
+            </ul>
+        </main>
+        <footer id="footer">
+            <ul class="footer__control">
+                <li class="footer__control-item">
+                    <i class="fa-solid fa-house footer__control-btn"></i>
+                </li>
+                <li class="footer__control-item">
+                    <i class="fa-solid fa-music footer__control-btn"></i>
+                </li>
+                <li class="footer__control-item middle-btn">
+                    <i class="fa-solid fa-play footer__control-btn play-btn"></i>
+                </li>
+                <li class="footer__control-item">
+                    <i class="fa-solid fa-magnifying-glass footer__control-btn"></i>
+                </li>
+                <li class="footer__control-item">
+                    <i class="fa-solid fa-bars footer__control-btn"></i>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
